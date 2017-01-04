@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.15.0",
-    "cookie-parser": "^1.4.1",
-    "express": "^4.13.4",
-    "express-session": "^1.13.0",
-    "method-override": "^2.3.5",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "flash": "^1.1.0",
+    "method-override": "^2.3.7",
     "morgan": "^1.7.0",
-    "serve-favicon": "^2.3.0"
+    "nib": "^1.1.2",
+    "serve-favicon": "^2.3.2"
   },
   "devDependencies": {
     "http-server": "^0.9.0",
@@ -20,7 +22,11 @@
   "scripts": {
     "test": "tape ./test/index.js",
     "build-css": "stylus -u nib -w ./lib/css/index.styl -o ./public/css/index.css",
-    "server": "http-server -p 5005"
+    "server": "http-server -p 5005",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "4.1.2"
   },
   "repository": {
     "type": "git",
@@ -28,8 +34,5 @@
   },
   "author": "joelengt",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/joelgt/wuf-perritos-lindos#readme",
-  "dependencies": {
-    "nib": "^1.1.2"
-  }
+  "homepage": "https://bitbucket.org/joelgt/wuf-perritos-lindos#readme"
 }
