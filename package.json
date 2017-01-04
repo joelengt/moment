@@ -1,0 +1,35 @@
+{
+  "name": "perritos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "method-override": "^2.3.5",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "nib": "^1.1.2",
+    "stylus": "^0.54.2"
+  },
+  "scripts": {
+    "test": "tape ./test/index.js",
+    "build-css": "stylus -u nib -w ./lib/css/index.styl -o ./public/css/index.css",
+    "server": "http-server -p 5005"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://joelgt@bitbucket.org/joelgt/wuf-perritos-lindos.git"
+  },
+  "author": "joelengt",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/joelgt/wuf-perritos-lindos#readme",
+  "dependencies": {
+    "nib": "^1.1.2"
+  }
+}

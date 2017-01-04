@@ -1,0 +1,145 @@
+.Perritos {
+    background: #D9DCDB;
+    overflow: hidden;
+}
+
+.Perritos__box {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.Perritos__item {
+    background-color: white;
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Cover */
+.Perritos__item .Perritos__item--cover {
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.Perritos__item--cover--modal {
+    display: block;
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    transition: .2s;
+}
+.Perritos__item--cover--modal .btnOpenModal {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: #018097;
+    padding: .6rem 1.3rem;
+    border-radius: 5px;
+    font-size: .9rem;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 35%;
+}
+
+.Perritos__item--cover--image img {
+    max-width: 100%;
+}
+
+
+/* Info */
+.Perritos__item .Perritos__item--info {
+    display: block;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+
+.Perritos__item--info__text {
+    display: inline-block;
+    text-align: left;
+    float: left;
+}
+
+.Perritos__item--info__text--title {
+    color: #333333;
+    font-size: 1.2rem;
+    display: block;
+    padding-bottom: .3rem;
+    font-family: "Open Sans SemiBold", sans-serif;
+}
+
+.Perritos__item--info__text--age {
+    color: #606060;
+    font-weight: 100;
+    font-size: .8rem;
+    display: block;
+    padding-bottom: .3rem;
+    font-family: "Open Sans Light", sans-serif;
+}
+
+.Perritos__item--info__text--price {
+    color: orange_logo;
+    display: block;
+    font-weight: 500;
+}
+
+.Perritos__item--info__text--price span {
+    font-size: 1.2rem;
+    font-family: "Open Sans SemiBold", sans-serif;
+}
+
+.Perritos__item--info__plus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1.2rem;
+    cursor: pointer;
+}
+
+.Perritos__item--info__plus img {
+    width: 35px;
+}
+
+.Perritos__GoTop {
+    float: right;
+    margin-right: 1.6rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 700px) {
+    .Perritos__box {
+        width: 100%;
+    }
+
+    .Perritos__item {
+        background-color: white;
+        width: 295px;
+        display: inline-block;
+        margin: .4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .Perritos__item--info__text--title {
+        font-size: 1rem;
+    }
+
+    .Perritos__item--info__plus {
+        margin: 1.5rem;
+    }
+
+    .Perritos__item--info__plus img {
+        width: 20px;
+    }
+}
