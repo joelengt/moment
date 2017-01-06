@@ -1,36 +1,12 @@
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../../../fonts/OpenSans-Regular.ttf");
-}
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../../../fonts/OpenSans-Bold.ttf");
-}
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("../../../fonts/OpenSans-Light.ttf");
-}
-@font-face {
-  font-family: "Open Sans SemiBold";
-  src: url("../../../fonts/OpenSans-Semibold.ttf");
-}
-@font-face {
-  font-family: "Open Sans BoldItalic";
-  src: url("../../../fonts/OpenSans-BoldItalic.ttf");
-}
-@font-face {
-  font-family: "Font Bolita";
-  src: url("../../../fonts/ARLRDBD.ttf");
-}
 * {
   margin: 0;
   padding: 0;
 }
 body {
   font-size: 1rem;
-  font-family: sans-serif;
   color: #000;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 /* v1.0 | 20080212 */
 html,
@@ -135,7 +111,6 @@ table {
   border-spacing: 0;
 }
 .HeaderMain {
-  background-image: url("../../images/assets/bg-rd@2x.png");
   background-color: #cff5fe;
   background-repeat: no-repeat;
   height: 620px;
@@ -144,6 +119,37 @@ table {
   background-size: cover;
   background-position-y: 0px;
   background-position: 0px 0px;
+  background: #ffd66c;
+  background: -moz--webkit-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -moz--moz-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -moz--o-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -moz--ms-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffd66c), color-stop(100%, #f0c569));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffd66c), color-stop(100%, #f0c569));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffd66c), color-stop(100%, #f0c569));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffd66c), color-stop(100%, #f0c569));
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ffd66c), color-stop(100%, #f0c569));
+  background: -webkit--webkit-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -webkit--moz-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -webkit--o-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -webkit--ms-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -o--webkit-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -o--moz-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -o--o-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -o--ms-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -o-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -ms--webkit-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -ms--moz-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -ms--o-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -ms--ms-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #ffd66c 0%, #f0c569 100%);
+  background: -webkit-radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
+  background: -moz-radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
+  background: -o-radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
+  background: -ms-radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
+  background: radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
 }
 .HeaderMain__box {
   width: 100%;
@@ -156,7 +162,19 @@ table {
   max-height: 500px;
 }
 .HeaderMain__dogs {
-  display: none;
+  display: block;
+}
+.HeaderMain__dogs--cover {
+  max-width: 500px;
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+.HeaderMain__dogs--cover img {
+  max-width: 100%;
 }
 .HeaderMain__logo--img {
   max-width: 180px;
@@ -170,28 +188,43 @@ table {
 }
 .HeaderMain__logo--text p {
   font-weight: 100;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 .HeaderMain__logo--btn {
   padding-top: 17rem;
   padding-bottom: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 .HeaderMain__logo--btn a {
   color: #fff;
   display: block;
   text-decoration: none;
-  background: #ff6329;
-  max-width: 138px;
-  padding: 0.5rem 2rem;
+  background: #54e0df;
+  max-width: 170px;
+  padding: 0.8rem 1.5rem;
   cursor: pointer;
   margin: 0 auto;
   text-align: center;
   border-radius: 5px;
   letter-spacing: 1px;
-  -webkit-box-shadow: 1px 1px 0px 0px #91371e;
-  box-shadow: 1px 1px 0px 0px #91371e;
-  font-family: "Open Sans Bold", sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: 2px 2px 0px 0px #008090;
+  -webkit-box-shadow: 2px 2px 0px 0px #008090;
+  box-shadow: 2px 2px 0px 0px #008090;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  -webkit-transition: background-color 250ms ease;
+  -moz-transition: background-color 250ms ease;
+  -o-transition: background-color 250ms ease;
+  -ms-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+}
+.HeaderMain__logo--btn a:hover {
+  background: #50d3d0;
 }
 @media screen and (min-width: 430px) {
   .HeaderMain {
@@ -220,7 +253,6 @@ table {
 @media screen and (min-width: 851px) {
   .HeaderMain {
     height: 386px;
-    background-image: url("../../images/assets/bg-web.png");
     overflow: hidden;
     background-position-y: 0px;
     background-position: 0px 0px;
@@ -238,6 +270,7 @@ table {
   .HeaderMain__logo--btn {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: relative;
   }
   .HeaderMain__logo--btn a {
     font-size: 1rem;
@@ -247,9 +280,16 @@ table {
   }
   .HeaderMain__dogs--cover {
     max-width: 542px;
+    position: relative;
+    bottom: 0;
   }
   .HeaderMain__dogs--cover img {
     max-width: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .HeaderMain__logo {
+    padding: 0% 5%;
   }
 }
 @media screen and (min-width: 1550px) {
@@ -265,7 +305,7 @@ table {
   }
 }
 .Perritos {
-  background: #d9dcdb;
+  background: #f7f7f7;
   overflow: hidden;
 }
 .Perritos__box {
@@ -281,6 +321,8 @@ table {
   width: 100%;
   display: block;
   margin-bottom: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .Perritos__item .Perritos__item--cover {
   display: block;
@@ -288,18 +330,29 @@ table {
   cursor: pointer;
 }
 .Perritos__item--cover--modal {
-  display: block;
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
   background: rgba(0,0,0,0.65);
   width: 100%;
   position: absolute;
   z-index: 9999;
   top: 0;
   bottom: 0;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  -ms-transition: 0.2s;
-  transition: 0.2s;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.Perritos__item:hover .Perritos__item--cover--modal {
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .Perritos__item--cover--modal .btnOpenModal {
   text-align: center;
@@ -309,13 +362,14 @@ table {
   padding: 0.6rem 1.3rem;
   border-radius: 5px;
   font-size: 0.9rem;
-  width: 100px;
+  width: 120px;
   margin: 0 auto;
   cursor: pointer;
   margin-top: 35%;
 }
 .Perritos__item--cover--image img {
   max-width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .Perritos__item .Perritos__item--info {
   display: block;
@@ -334,7 +388,8 @@ table {
   font-size: 1.2rem;
   display: block;
   padding-bottom: 0.3rem;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .Perritos__item--info__text--age {
   color: #606060;
@@ -342,7 +397,8 @@ table {
   font-size: 0.8rem;
   display: block;
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 .Perritos__item--info__text--price {
   color: #ff6329;
@@ -351,7 +407,8 @@ table {
 }
 .Perritos__item--info__text--price span {
   font-size: 1.2rem;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .Perritos__item--info__plus {
   position: absolute;
@@ -380,6 +437,7 @@ table {
     display: inline-block;
     margin: 0.4rem;
     margin-bottom: 1rem;
+    border-radius: 5px;
   }
   .Perritos__item--info__text--title {
     font-size: 1rem;
@@ -392,7 +450,7 @@ table {
   }
 }
 .FooterMain {
-  background: #80351b;
+  background: #008090;
   color: #fff;
   text-align: center;
 }
@@ -414,7 +472,8 @@ table {
   font-size: 0.7rem;
 }
 .FooterMain__text p {
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 .modal {
   display: none;
@@ -466,7 +525,8 @@ table {
 }
 .Cartel__top--logos--bottom p {
   font-size: 0.7rem;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .Cartel__top--logos__wuf {
   display: inline-block;
@@ -489,7 +549,8 @@ table {
   display: inline-block;
   vertical-align: middle;
   padding-left: 1rem;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .Cartel__top--maps {
   display: block;
@@ -514,7 +575,8 @@ table {
   padding-left: 1rem;
   padding-top: 2rem;
   width: 45%;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 .Cartel__top--right img {
   max-width: 100%;
@@ -538,7 +600,8 @@ table {
   text-align: left;
 }
 .Cartel__top--right__hogar--text p {
-  font-family: "Open Sans Regular";
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   padding-top: 0.3rem;
   font-size: 0.7rem;
 }
@@ -549,27 +612,34 @@ table {
 }
 .Cartel__top--letters-1 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-size: 1rem;
 }
 .Cartel__top--letters-2 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 0.8rem;
 }
 .Cartel__top--letters-3 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans BoldItalic", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 2.3rem;
 }
 .Cartel__top--letters-4 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 0.8rem;
 }
 .Cartel__top--letters-5 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans BoldItalic", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: 2rem;
 }
 .Cartel__top--letters__textAdopta {
@@ -708,7 +778,8 @@ table {
   font-size: 1rem;
   text-align: center;
   line-height: 25px;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   border-radius: 1px 0 0 0;
   padding-left: 0.1rem;
   z-index: 1;
@@ -742,7 +813,8 @@ table {
   line-height: 38px;
   font-weight: bold;
   font-size: 1.5rem;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 .close:hover,
 .close:focus {
@@ -800,7 +872,9 @@ table {
     font-size: 2.3rem;
     color: #ff6329;
     padding-bottom: 0.3rem;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
   .Cartel__top--letters-4 {
     font-size: 0.9rem;
@@ -828,7 +902,8 @@ table {
     font-size: 1rem;
     text-align: center;
     line-height: 25px;
-    font-family: "Open Sans Light", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     border-radius: 0px 0 0 0px;
     padding-left: 0px;
     border-bottom: 1px solid #ff6329;

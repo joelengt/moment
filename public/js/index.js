@@ -21,22 +21,22 @@
     }
 
     // Event HoverImage
-    function HoverToImage() {
-        var $images = document.querySelectorAll('.ImagenToHover');
-        var $modal = document.querySelector('.Perritos__item--cover--modal');
+    // function HoverToImage() {
+    //     var $images = document.querySelectorAll('.ImagenToHover');
+    //     var $modal = document.querySelector('.Perritos__item--cover--modal');
 
-        // Modal Hover Item event
-        $('.Perritos__item--cover').hover(function(e) {
-            var $this = $(this);
-            var $article = $this.closest('.Perritos__item--cover--modal');
-            var $modal = $article.context.lastElementChild;
+    //     // Modal Hover Item event
+    //     $('.Perritos__item--cover').hover(function(e) {
+    //         var $this = $(this);
+    //         var $article = $this.closest('.Perritos__item--cover--modal');
+    //         var $modal = $article.context.lastElementChild;
 
-            $modal.style.display = 'block';
+    //         $modal.style.display = 'block';
 
-        }, function() {
-          $('.Perritos__item--cover--modal').css('display', 'none');
-        });
-    }
+    //     }, function() {
+    //       $('.Perritos__item--cover--modal').css('display', 'none');
+    //     });
+    // }
 
     // Event Open Modal
     function EventModals() {
@@ -167,7 +167,7 @@
     }
 
     function main () {
-        HoverToImage();
+        // HoverToImage();
         EventModals();
         goTopPage();
         goToWuf();
