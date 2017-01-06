@@ -1,59 +1,458 @@
-<?php
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1- strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="noodp,noydir" /> 
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 
-/**
- *  * Laravel - A PHP Framework For Web Artisans
- *   *
- *    * @package  Laravel
- *     * @author   Taylor Otwell <taylorotwell@gmail.com>
- *      */
+        <title>Perritos Lindos</title>
+        
+        <!-- favicon  -->
+        <link rel="icon" type="image/png" href="./images/assets/logo_cabecera.png">
 
-/*
- * |--------------------------------------------------------------------------
- * | Register The Auto Loader
- * |--------------------------------------------------------------------------
- * |
- * | Composer provides a convenient, automatically generated class loader for
- * | our application. We just need to utilize it! We'll simply require it
- * | into the script here so that we don't have to worry about manual
- * | loading any of our classes later on. It feels nice to relax.
- * |
- * */
+        <!-- Facebook  -->
+        <meta property="og:title" content="Perritos Lindos">
+        <meta property="og:description" content="Compra los mejores perros de raza">
+        <meta property="og:image" content="http://perritoslindos.pe/images/assets/banner_desktop.png">
+        <meta property="og:url" content="http://perritoslindos.pe">
+        
+        <!-- fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        
+        <!-- styls-->
+        <link rel="stylesheet" href="./css/index.css">
+        
+        <!--[if lt IE 9]>
+            <script src="./js/html5shiv.js"></script>
+        <![endif]-->
 
-require __DIR__.'/../bootstrap/autoload.php';
+        <!--[if lt IE 9]>
+            <script src="./js/respond.src.js"></script>
+        <![endif]-->
 
-/*
- * |--------------------------------------------------------------------------
- * | Turn On The Lights
- * |--------------------------------------------------------------------------
- * |
- * | We need to illuminate PHP development, so let us turn on the lights.
- * | This bootstraps the framework and gets it ready for use, then it
- * | will load up this application so that we can run it and send
- * | the responses back to the browser and delight our users.
- * |
- * */
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" media="all" href="./css/ie8.css"/>
+        <![endif]-->
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
 
-/*
- * |--------------------------------------------------------------------------
- * | Run The Application
- * |--------------------------------------------------------------------------
- * |
- * | Once we have the application, we can handle the incoming request
- * | through the kernel, and send the associated response back to
- * | the client's browser allowing them to enjoy the creative
- * | and wonderful application we have prepared for them.
- * |
- * */
+    </head>
+    <body>
+        <header class="HeaderMain">
+            <div class="HeaderMain__box">
+                <div class="HeaderMain__logo">
+                    <div class="HeaderMain__logo--img">
+                        <img src="./images/assets/logo_cabecera@2x.png" alt="">
+                    </div>
+                    <div class="HeaderMain__logo--text">
+                        <p>Compra los mejores perros de raza</p>
+                    </div>
+                    <div class="HeaderMain__logo--btn">
+                        <a id="btnKnowMoreancla" href="#Ancla">Conoce a todos</a>
+                    </div>
+                </div>
+                <div class="HeaderMain__dogs">
+                    <div class="HeaderMain__dogs--cover">
+                        <img src="./images/assets/dog-cute.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="Perritos">
+            <a name="Ancla"></a>
+            <div class="Perritos__box">
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog12-yorkshireterrier.jpg">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Yorkshire Terrier</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog6-dalmata.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Dalmata</strong>
+                            <p class="Perritos__item--info__text--age">3 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$450.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog9-labrador.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Labrador</strong>
+                            <p class="Perritos__item--info__text--age">5 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$650.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog3-bordercollie.jpg">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Border Collie</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog5-chihuahua.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Chihuahua</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog7-doberman.jpg">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Doberman</strong>
+                            <p class="Perritos__item--info__text--age">3 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$450.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog4-bracoweimaraner.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Braco Weimaraner</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog1-beagle.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Beagle</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog10-pastor-aleman.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Pastor Alemán</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog11-pug.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Bull Dog Inglés</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog8-jackrussellterrier.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Jack Russell</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+                <article class="Perritos__item">
+                    <div class="Perritos__item--cover">
+                        <div class="Perritos__item--cover--image">
+                            <img class="ImagenToHover" src="./images/assets/dog2-bichonmaltes.jpg" alt="">
+                        </div>
+                        <div class="Perritos__item--cover--modal">
+                            <div class="btnOpenModal" href="">!Cómprame ya!</div>
+                        </div>
+                    </div>
+                    <div class="Perritos__item--info">
+                        <div class="Perritos__item--info__text">
+                            <strong class="Perritos__item--info__text--title">Bichon Maltés</strong>
+                            <p class="Perritos__item--info__text--age">4 meses</p>
+                            <p class="Perritos__item--info__text--price"> Precio <span>$500.00 USD</span></p>
+                        </div>
+                        <div class="Perritos__item--info__plus">
+                            <img src="./images/assets/icon_vermas@2x.png">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="Perritos__GoTop" id="btnGoTop">
+                <img src="./images/assets/icon_arriba@2x.png" width="30">
+            </div>
+        </section>
+        <footer class="FooterMain">
+            <div class="FooterMain__box">
+                <div class="FooterMain__logo">
+                    <img src="./images/assets/logo_footer@2x.png" alt="">
+                </div>
+                <div class="FooterMain__text">
+                    <p>2016 Perritos Lindos - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
-
-$response = $kernel->handle(
-        $request = Illuminate\Http\Request::capture()
-    );
-
-$response->send();
-
-$kernel->terminate($request, $response);
-
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div id="myModalContent" class="ContentModalAbierto">
+                <!-- The Close Button -->
+                <div>
+                    <span id="btn_close" class="close">
+                        cerrar
+                    </span>
+                </div>
+                <div class="Cartel__box">
+                    <div class="Cartel__top">
+                        <div class="Cartel__top--logos">
+                            <div class="Cartel__top--logos--top">
+                                <div class="Cartel__top--logos__entel">
+                                    <img src="./images/assets/logo-entel@2x.png" alt="">
+                                </div>
+                                <p class="Cartel__top--logos__middle-text">y</p>
+                                <div class="Cartel__top--logos__wuf">
+                                    <img src="./images/assets/logo-wuf@2x.png" alt="">
+                                </div>
+                            </div>
+                            <div class="Cartel__top--logos--bottom">
+                                <p>Se unen para fomentar la adopción de perros en el Perú.</p>
+                            </div>
+                        </div>
+                        <div class="Cartel__top--maps">
+                            <div class="Cartel__top--letf">
+                                <img src="./images/modal/mapa-peru@2x.png">
+                            </div>
+                            <div class="Cartel__top--right">
+                                <div class="Cartel__top--right__hogar">
+                                    <div class="Cartel__top--right__hogar--cover">
+                                        <img src="./images/modal/con-hogar@2x.png">
+                                    </div>
+                                    <div class="Cartel__top--right__hogar--text">
+                                        <p>
+                                            perros
+                                        </p>
+                                        <p>
+                                            con hogar
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="Cartel__top--right__hogar">
+                                    <div class="Cartel__top--right__hogar--cover">
+                                        <img src="./images/modal/sin-hogar@2x.png">
+                                    </div>
+                                    <div class="Cartel__top--right__hogar--text">
+                                        <p>
+                                            perros
+                                        </p>
+                                        <p>
+                                            sin hogar
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Cartel__top--letters">
+                            <p class="Cartel__top--letters-1">mientras estás pensando en comprar,</p>
+                            <p class="Cartel__top--letters-2">muchos perros rescatados</p>
+                            <p class="Cartel__top--letters-3">buscan hogar</p>
+                            <p class="Cartel__top--letters-4">son perritos lindos y tienen historias que contar.</p>
+                            <p class="Cartel__top--letters-5">no compres. <span class="Cartel__top--letters__textAdopta">adopta.</span></p>
+                        </div>
+                    </div>
+                    <div class="Cartel__topDesktop">
+                        <div class="Cartel__topDesktop--box">
+                            <div class="Cartel__topDesktop--left">
+                                <img src="./images/modal/mapa-peru@2x.png">
+                            </div>
+                            <div class="Cartel__topDesktop--right">
+                                <div class="Cartel__top--logos">
+                                    <div class="Cartel__top--logos--top">
+                                        <div class="Cartel__top--logos__entel">
+                                            <img src="./images/assets/logo-entel@2x.png" alt="">
+                                        </div>
+                                        <p class="Cartel__top--logos__middle-text">y</p>
+                                        <div class="Cartel__top--logos__wuf">
+                                            <img src="./images/assets/logo-wuf@2x.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="Cartel__top--logos--bottom">
+                                        <p>Se unen para fomentar la adopción de perros en el Perú.</p>
+                                    </div>
+                                </div>
+                                <div class="Cartel__top--right">
+                                    <div class="Cartel__top--right__hogar">
+                                        <div class="Cartel__top--right__hogar--cover">
+                                            <img src="./images/modal/con-hogar@2x.png">
+                                        </div>
+                                        <div class="Cartel__top--right__hogar--text">
+                                            <p>
+                                                perros
+                                            </p>
+                                            <p>
+                                                con hogar
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="Cartel__top--right__hogar">
+                                        <div class="Cartel__top--right__hogar--cover">
+                                            <img src="./images/modal/sin-hogar@2x.png">
+                                        </div>
+                                        <div class="Cartel__top--right__hogar--text">
+                                            <p>
+                                                perros
+                                            </p>
+                                            <p>
+                                                sin hogar
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Cartel__top--letters">
+                                    <p class="Cartel__top--letters-1">mientras estás pensando en comprar,</p>
+                                    <p class="Cartel__top--letters-2">muchos perros rescatados</p>
+                                    <p class="Cartel__top--letters-3">buscan hogar</p>
+                                    <p class="Cartel__top--letters-4">son perritos lindos y tienen historias que contar.</p>
+                                    <p class="Cartel__top--letters-5">no compres. <span class="Cartel__top--letters__textAdopta">adopta.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Cartel__bottom">
+                        <div class="Cartel__uri" id="btnGoToWuf">
+                            <p>www.wuf.pe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <script type="text/javascript" src="./js/jquery-2.2.4.js"></script> -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>
