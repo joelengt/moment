@@ -1,11 +1,19 @@
 .HeaderMain {
-    background-image: url('../../images/assets/bg-rd@2x.png');
+    // background-image: url('../../images/assets/bg-rd@2x.png');
     background-color: #cff5fe;
     background-repeat: no-repeat;
     height: 620px;
     background-size: cover;
     background-position-y: 0px;
     background-position: 0px 0px;
+    background: rgba(255,214,108,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,214,108,1) 0%, rgba(240,197,105,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,214,108,1)), color-stop(100%, rgba(240,197,105,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,214,108,1) 0%, rgba(240,197,105,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,214,108,1) 0%, rgba(240,197,105,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,214,108,1) 0%, rgba(240,197,105,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,214,108,1) 0%, rgba(240,197,105,1) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd66c', endColorstr='#f0c569', GradientType=1 );
 }
 
 .HeaderMain__box { 
@@ -21,8 +29,24 @@
 }
 
 .HeaderMain__dogs {
-    display: none;
+    display: block;
 }
+
+.HeaderMain__dogs--cover {
+   max-width: 500px;
+   position: absolute;
+   bottom: 10px;
+   margin: 0 auto;
+   text-align: center;
+   left: 0;
+   right: 0;
+}
+
+.HeaderMain__dogs--cover img {
+    max-width: 100%;
+}
+
+
 
 .HeaderMain__logo--img {
     max-width: 180px;
@@ -39,29 +63,41 @@
 
 .HeaderMain__logo--text p {
     font-weight: 100;
-    font-family: "Open Sans Regular", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
 }
 
 .HeaderMain__logo--btn {
     padding-top: 17rem;
     padding-bottom: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .HeaderMain__logo--btn a {
-    color: white;
+    color: #fff;
     display: block;
     text-decoration: none;
-    background: orange_logo;
-    max-width: 138px;
-    padding: .5rem 2rem;
+    background: #54e0df;
+    max-width: 170px;
+    padding: 0.8rem 1.5rem;
     cursor: pointer;
     margin: 0 auto;
     text-align: center;
     border-radius: 5px;
     letter-spacing: 1px;
-    box-shadow: 1px 1px 0px 0px #91371E;
-    font-family: "Open Sans Bold", sans-serif;
+    text-transform: uppercase;
+    -webkit-box-shadow: 2px 2px 0px 0px #008090;
+    box-shadow: 2px 2px 0px 0px #008090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: font_open_sans_size_bold;
+    transition: background-color 250ms ease;
+}
+
+.HeaderMain__logo--btn a:hover {
+    background: #50d3d0;
 }
 
 @media screen and (min-width: 430px) {
@@ -95,7 +131,7 @@
 @media screen and (min-width: 851px) {
     .HeaderMain {
         height: 386px;
-        background-image: url('../../images/assets/bg-web.png');
+        // background-image: url('../../images/assets/bg-web.png');
         overflow: hidden;
         background-position-y: 0px;
         background-position: 0px 0px;
@@ -116,6 +152,7 @@
     .HeaderMain__logo--btn {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        position: relative;
     }
 
     .HeaderMain__logo--btn a {
@@ -128,12 +165,20 @@
     
     .HeaderMain__dogs--cover {
         max-width: 542px;
+        position: relative;
+        bottom: 0;
     }
 
     .HeaderMain__dogs--cover img {
         max-width: 100%;
     }
 
+}
+
+@media screen and (min-width: 900px) {
+    .HeaderMain__logo {
+        padding: 0% 5%;
+    }
 }
 
 @media screen and (min-width: 1550px) {

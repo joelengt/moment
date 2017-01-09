@@ -1,5 +1,5 @@
 .Perritos {
-    background: #D9DCDB;
+    background: #F7F7F7;
     overflow: hidden;
 }
 
@@ -17,6 +17,8 @@
     width: 100%;
     display: block;
     margin-bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Cover */
@@ -27,15 +29,24 @@
 }
 
 .Perritos__item--cover--modal {
-    display: block;
-    background: rgba(0, 0, 0, 0.65);
+    visibility: hidden;
+    opacity: 0;
+    background: rgba(0,0,0,0.65);
     width: 100%;
     position: absolute;
     z-index: 9999;
     top: 0;
     bottom: 0;
-    transition: .2s;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
 }
+
+.Perritos__item:hover .Perritos__item--cover--modal {
+    visibility: visible;
+    opacity: 1;
+}
+
 .Perritos__item--cover--modal .btnOpenModal {
     text-align: center;
     color: white;
@@ -44,7 +55,7 @@
     padding: .6rem 1.3rem;
     border-radius: 5px;
     font-size: .9rem;
-    width: 100px;
+    width: 120px;
     margin: 0 auto;
     cursor: pointer;
     margin-top: 35%;
@@ -52,6 +63,7 @@
 
 .Perritos__item--cover--image img {
     max-width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 
 
@@ -75,7 +87,8 @@
     font-size: 1.2rem;
     display: block;
     padding-bottom: .3rem;
-    font-family: "Open Sans SemiBold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: font_open_sans_size_semi_bold;
 }
 
 .Perritos__item--info__text--age {
@@ -84,7 +97,8 @@
     font-size: .8rem;
     display: block;
     padding-bottom: .3rem;
-    font-family: "Open Sans Light", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: font_open_sans_size_light;
 }
 
 .Perritos__item--info__text--price {
@@ -95,7 +109,8 @@
 
 .Perritos__item--info__text--price span {
     font-size: 1.2rem;
-    font-family: "Open Sans SemiBold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: font_open_sans_size_semi_bold;
 }
 
 .Perritos__item--info__plus {
@@ -129,6 +144,7 @@
         display: inline-block;
         margin: .4rem;
         margin-bottom: 1rem;
+        border-radius: 5px;
     }
     
     .Perritos__item--info__text--title {

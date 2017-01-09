@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "Open Sans Regular";
-  src: url("../../../fonts/OpenSans-Regular.ttf");
-}
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../../../fonts/OpenSans-Bold.ttf");
-}
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("../../../fonts/OpenSans-Light.ttf");
-}
-@font-face {
-  font-family: "Open Sans SemiBold";
-  src: url("../../../fonts/OpenSans-Semibold.ttf");
-}
-@font-face {
-  font-family: "Open Sans BoldItalic";
-  src: url("../../../fonts/OpenSans-BoldItalic.ttf");
-}
-@font-face {
-  font-family: "Font Bolita";
-  src: url("../../../fonts/ARLRDBD.ttf");
-}
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +6,7 @@ body {
   font-size: 1rem;
   font-family: sans-serif;
   color: #000;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 /* v1.0 | 20080212 */
 html,
@@ -173,7 +149,7 @@ table {
 }
 .HeaderMain__logo--text p {
   font-weight: 100;
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 .HeaderMain__logo--btn {
@@ -197,7 +173,7 @@ table {
   letter-spacing: 1px;
   -webkit-box-shadow: 1px 1px 0px 0px #91371e;
   box-shadow: 1px 1px 0px 0px #91371e;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
   .HeaderMain {
     background-position-y: -76px;
@@ -325,7 +301,7 @@ table {
   font-size: 1.2rem;
   display: block;
   padding-bottom: 0.3rem;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .Perritos__item--info__text--age {
   color: #606060;
@@ -333,7 +309,7 @@ table {
   font-size: 0.8rem;
   display: block;
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .Perritos__item--info__text--price {
   color: #ff6329;
@@ -342,7 +318,7 @@ table {
 }
 .Perritos__item--info__text--price span {
   font-size: 1.2rem;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .Perritos__item--info__plus {
   position: absolute;
@@ -404,7 +380,7 @@ table {
   font-size: 0.7rem;
 }
 .FooterMain__text p {
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .modal {
   display: none;
@@ -491,7 +467,7 @@ table {
   padding-left: 1rem;
   padding-top: 2rem;
   width: 45%;
-  font-family: "Open Sans SemiBold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .Cartel__top--right img {
   max-width: 100%;
@@ -515,7 +491,7 @@ table {
   text-align: left;
 }
 .Cartel__top--right__hogar--text p {
-  font-family: "Open Sans Regular";
+  font-family: 'Open Sans';
   padding-top: 0.3rem;
   font-size: 0.7rem;
 }
@@ -526,27 +502,27 @@ table {
 }
 .Cartel__top--letters-1 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 }
 .Cartel__top--letters-2 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
 }
 .Cartel__top--letters-3 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans BoldItalic", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.3rem;
 }
 .Cartel__top--letters-4 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
 }
 .Cartel__top--letters-5 {
   padding-bottom: 0.3rem;
-  font-family: "Open Sans BoldItalic", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
 .Cartel__top--letters__textAdopta {
@@ -685,7 +661,7 @@ table {
   font-size: 1rem;
   text-align: center;
   line-height: 25px;
-  font-family: "Open Sans Light", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   border-radius: 1px 0 0 0;
   padding-left: 0.1rem;
   z-index: 1;
@@ -719,7 +695,7 @@ table {
   line-height: 38px;
   font-weight: bold;
   font-size: 1.5rem;
-  font-family: "Open Sans Bold", sans-serif;
+  font-family: 'Open Sans's-serif;
 }
 .close:hover,
 .close:focus {
@@ -774,7 +750,7 @@ table {
     font-size: 2.3rem;
     color: #ff6329;
     padding-bottom: 0.3rem;
-    font-family: "Open Sans Bold", sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   .Cartel__top--letters-4 {
     font-size: 0.9rem;
@@ -802,7 +778,7 @@ table {
     font-size: 1rem;
     text-align: center;
     line-height: 25px;
-    font-family: "Open Sans Light", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-radius: 0px 0 0 0px;
     padding-left: 0px;
     border-bottom: 1px solid #ff6329;

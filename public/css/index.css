@@ -150,6 +150,8 @@ table {
   background: -o-radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
   background: -ms-radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
   background: radial-gradient(ellipse at center, #ffd66c 0%, #f0c569 100%);
+  position: relative;
+  overflow: hidden;
 }
 .HeaderMain__box {
   width: 100%;
@@ -167,7 +169,7 @@ table {
 .HeaderMain__dogs--cover {
   max-width: 500px;
   position: absolute;
-  bottom: 10px;
+  bottom: -4px;
   margin: 0 auto;
   text-align: center;
   left: 0;
