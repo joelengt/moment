@@ -38,6 +38,23 @@
     //     });
     // }
 
+    // Event Hover Bar
+
+    function HoverBarOut() {
+        var $BarOut = document.querySelectorAll('.bar_out');
+        
+        // Modal Hover Item event
+        $('.bar_out').hover(function(e) {
+            console.log('Bar to Out');
+            $('.bar_out').css('display', 'none');
+            modalBox();
+
+        }, function() {
+          $('.bar_out').css('display', 'none');
+        });
+
+    }
+
     // Event Open Modal
     function EventModals() {
         var $btnArticles = document.querySelectorAll('.Perritos__item--cover');
@@ -175,6 +192,7 @@
         iconPlusToOpenModal();
         EventCloseButton();
         EventCloseOutModal();
+        HoverBarOut()
     }
 
     // window.addEventListener("load", function(event) {
